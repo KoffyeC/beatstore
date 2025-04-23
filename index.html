@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProdKayCey | Beat Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+
+    /* Base Styles */
+    body {
+      color: #e0e0e0;
+      background-color: #121212;
+      font-family: Poppins, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* Navigation */
+    .navbar {
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #212d35;
+      background-color: rgba(18, 18, 18, 0.95);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .brand-logo {
+      margin: 0;
+      font-size: 24px;
+      color: #e0e0e0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-link {
+      color: #e0e0e0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #8FC9F2;
+    }
+
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9));
+      background-size: cover;
+      padding: 0 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero-title {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      background: linear-gradient(45deg, #e0e0e0, #e0e0e0);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    
+    .cta-button {
+      padding: 15px 40px;
+      background-color: #8FC9F2;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+   
+    /* Beats Section */
+    .beats-section {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #8FC9F2;
+    }
+
+    .beats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .beat-card {
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .beat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .beat-image {
+      aspect-ratio: 1;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .beat-title {
+      margin: 10px 0;
+    }
+
+    .beat-tags {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      background-color: #212d35;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+      outline: none;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.00);
+    }
+
+    
+    /* Licensing Section */
+    .licensing-section {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 20px;
+    }
+
+    .license-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .license-card {
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid #212d35;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .license-card.featured {
+      transform: scale(1.05);
+    }
+
+    .license-title {
+      color: #8FC9F2;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .license-price {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .license-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px 0;
+      text-align: left;
+    }
+
+    .license-features li {
+      margin: 10px 0;
+    }
+
+    .btn-buy-license {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      color: #121212;
+      font-size: 1.1rem;
+      cursor: pointer;
+      background-color: #8FC9F2;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn-buy-license:hover {
+      opacity: 0.9;
+    }
+
+
+    /* Media */
+    @media (max-width: 991px) {
+      .beats-grid,
+      .license-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .lease-stipulation-agreement {
+        font-size: 0.9rem;
+      }
+    }
+
+  @media (max-width: 640px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 15px;
+      }
+
+    .nav-links {
+       gap: 15px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .beats-grid,
+      .license-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .lease-stipulation-agreement {
+        font-size: 0.7rem;
+      }
+
+    }
+    
+
+      /* Footer Inside Media */
+      .footer {
+        padding: 40px 20px;
+        text-align: center;
+        color: #888;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        margin-bottom: 20px;
+      }
+
+      .footer-link {
+        color: #888;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+
+      .footer-link:hover {
+        color: #8FC9F2;
+      }
+
+      .copyright {
+        font-size: 0.9rem;
+      }
+
+      .lease-stipulation-agreement {
+        margin-bottom: -13px;
+      }
+      
+
+      .footer {
+        border-top: 1px solid #212d35;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        max-width: 1900px; 
+        margin: 100px auto;
+        padding: 0 20px;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .form-input,
+      .form-textarea {
+        padding: 15px;
+        border: 1px solid #212d35;
+        border-radius: 5px;
+        color: #e0e0e0;
+        background-color: rgba(255, 255, 255, 0.05);
+        font-size: 1rem;
+      }
+
+      .form-input::placeholder,
+      .form-textarea::placeholder {
+        color: #888;
+      }
+
+      .form-textarea {
+        height: 150px;
+        resize: vertical;
+      }
+
+      .btn-submit {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        color: #121212;
+        font-size: 1.1rem;
+        cursor: pointer;
+        background-color: #8FC9F2;
+        transition: opacity 0.3s ease;
+      }
+
+      .btn-submit:hover {
+        opacity: 0.9;
+      }
+
+</style>
+
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="brandx-logo">PRODKAYCEY</h1>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#licensing" class="nav-link">Licensing</a>
+        <a href="#contact" class="nav-link">Contact</a> 
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">ProdKayCey</h1>
+      <a href="beatstore.html" class="cta-button">Browse Beats</a>
+    </div>
+  </section>
+
+  <!-- Licensing Section #1 -->
+  <section id="licensing" class="licensing-section">
+    <h2 class="section-title">Licensing Options</h2>
+    <div class="license-grid">
+      <article class="license-card">
+        <h3 class="license-title">MP3 License</h3>
+        <p class="license-price">$20.00</p>
+        <ul class="license-features">
+          <li>✓ MP3 Format</li>
+          <li>✓ 0 Distribution Copies</li>
+          <li>✓ 5000 Audio Streams</li>
+          <li>✓ 0 Music Videos</li>
+          <li>✓ 0 Paid Performances</li>
+          <li>✓ 0 Non-Profit Performances</li>
+          <li>✓ 0 Radio Stations</li>
+          <li>✓ MUST BE CREDITED IN SONG   TITLE</li>
+        </ul>
+        <a href="lease.html" class="nav-link"> <button class="btn-buy-license">Full Lease</button> </a>
+      </article>
+
+  <!-- Licensing Section #2 -->
+      <article class="license-card featured">
+        <h3 class="license-title">WAV License</h3>
+        <p class="license-price">$40.00</p>
+        <ul class="license-features">
+          <li>✓ WAV Format</li>
+          <li>✓ 100 Distribution Copies</li>
+          <li>✓ 10,000 Audio Streams</li>
+          <li>✓ 1 Music Video</li>
+          <li>✓ 3 Paid Performances</li>
+          <li>✓ 3 Non-Profit Performances</li>
+          <li>✓ 0 Radio Stations</li>
+          <li>✓ MUST BE CREDITED IN SONG TITLE AND MUSIC VIDEO TITLE</li>
+        </ul>
+        <a href="lease.html" class="nav-link"> <button class="btn-buy-license">Full Lease</button> </a>
+      </article>
+
+    <!-- Licensing Section #3 -->    
+      <article class="license-card">
+        <h3 class="license-title">Trackout License</h3>
+        <p class="license-price">$60.00</p>
+        <ul class="license-features">
+          <li>✓ All Stem Files</li>
+          <li>✓ 10,000 Distribution Copies</li>
+          <li>✓ 100,000 Audio Streams</li>
+          <li>✓ 3 Music Videos</li>
+          <li>✓ 25 Paid Performances</li>
+          <li>✓ 25 Non-Profit Performances</li>
+          <li>✓ 2 Radio Stations</li>
+          <li>✓ MUST BE CREDITED IN SONG TITLE AND MUSIC VIDEO TITLE</li>
+        </ul>
+        <a href="lease.html" class="nav-link"> <button class="btn-buy-license">Full Lease</button> </a>
+      </article>
+    </div>
+  </section>
+
+ <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Get in Touch</h2>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="e830454a-7a71-4215-b17d-ae437ca52da6">
+
+    <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+    <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+    <textarea name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn-submit">Send Message</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Full Leases</a>
+      </div>
+      <p class="copyright">© 2025 ProdKayCey. All rights reserved.</p>
+      <p class="lease-stipulation-agreement"> By purchasing these beats, you the buyer, consent to the licensing and full lease contract stipulations.</p>
+    </div>
+  </footer>
+</body>
+</html>
