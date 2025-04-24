@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>prodkayceybeats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+    /* Base Styles */
+    body {
+      color: rgba(18, 18, 18);
+      background-color: white;
+      font-family: Poppins, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* Navigation */
+    .navbar {
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(18, 18, 18);
+      background-color: white;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .brand-logo {
+      margin: 0;
+      font-size: 24px;
+      color: rgba(18, 18, 18);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-link {
+      color: rgba(18, 18, 18);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #555555;
+    }
+
+
+    /* section */
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: rgba(18, 18, 18);
+      margin: 140px 0 0 0;
+      margin-bottom: 0px;
+      font-family: Poppins, sans-serif;
+    }
+
+    .licensing-section{
+      font-size: 16px;  
+      text-align:center; 
+      font-family: Poppins, sans-serif;
+      font-weight: 300;
+      text-align: left;
+      padding: 20px;
+      list-style: none;
+    }
+
+
+    /* Media */
+    @media (max-width: 991px) {
+      .beats-grid,
+      .license-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .lease-stipulation-agreement {
+        font-size: 0.9rem;
+      }
+    }
+
+  @media (max-width: 640px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 15px;
+      }
+
+    .nav-links {
+       gap: 15px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .beats-grid,
+      .license-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .lease-stipulation-agreement {
+        font-size: 0.7rem;
+      }
+
+    }
+    
+
+      /* Footer Inside Media */
+      .footer {
+        padding: 40px 20px;
+        text-align: center;
+        color: rgba(18, 18, 18);
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        margin-bottom: 20px;
+      }
+
+      .footer-link {
+        color: rgba(18, 18, 18);
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+
+      .copyright {
+        font-size: 0.9rem;
+      }
+
+      .lease-stipulation-agreement {
+        margin-bottom: -13px;
+      }
+      
+
+      .footer {
+        border-top: 1px solid rgba(18, 18, 18);
+      }
+
+
+      /* Contact Section */
+      .contact-section {
+        max-width: 1900px; 
+        margin: 100px auto;
+        padding: 0 20px;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .form-input,
+      .form-textarea {
+        padding: 15px;
+        border: 1px solid #212d35;
+        border-radius: 5px;
+        color: #e0e0e0;
+        background-color: rgba(255, 255, 255, 0.05);
+        font-size: 1rem;
+      }
+
+      .form-input::placeholder,
+      .form-textarea::placeholder {
+        color: #888;
+      }
+
+      .form-textarea {
+        height: 150px;
+        resize: vertical;
+      }
+
+      .btn-submit {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        color: #121212;
+        font-size: 1.1rem;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid rgba(18, 18, 18);
+        transition: opacity 0.3s ease;
+      }
+
+      .btn-submit:hover {
+        opacity: 0.9;
+      }
+</style>
+
+<body>
+
+        <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-link"><h1 class="brand-logo">PRODKAYCEY</h1></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#contact" class="nav-link">Contact</a> 
+      </div>
+    </div>
+  </nav>
+
+
+
+    <section id="licensing" class="licensing-section">
+    <h2 class="section-title">Terms of Service</h2>
+    <article class="license-card">
+      <p class="license-stipulations">
+        <h1>Terms of Service for prodkayceybeats</h1>
+        <p><strong>Effective Date:</strong> 04/23/2025</p>
+        <p>Welcome to prodkayceybeats ("we", "our", "us"). These Terms of Service ("Terms") govern your use, licensing, and purchases of beats from our website at <a href="https://koffyec.github.io/prodkayceybeats/">koffyec.github.io/prodkayceybeats</a> (the "Site"). By accessing or using this site, you agree to comply with and be bound by these Terms. If you do not agree, do not use or purchase from our store.</p>
+    
+        <div class="section">
+          <h2>1. Acceptance of Terms</h2>
+          <p>By purchasing, downloading, or using any beat from our store, you agree to these Terms. You also confirm that you understand the licensing rights and limitations associated with each license type.</p>
+        </div>
+    
+        <div class="section">
+          <h2>2. License Types & Usage Rights</h2>
+          <p>We offer four types of licenses. Each license grants you limited rights to use the beat, not ownership. Rights are non-transferable and non-exclusive (unless otherwise stated).</p>
+    
+          <p><strong>MP3 License – $20</strong></p>
+          <ul>
+            <li style="color:green;">MP3 Format Only</li>
+            <li style="color:red;">0 Distribution Copies</li>
+            <li style="color:green;">Up to 5000 Audio Streams</li>
+            <li style="color:red;">No Music Videos</li>
+            <li style="color:red;">No Paid or Non-Profit Performances</li>
+            <li style="color:red;">No Radio Broadcasting</li>
+            <li style="color:green;">Credit Required (e.g., “Prod. KayCey”)</li>
+          </ul>
+    
+          <p><strong>WAV License – $40</strong></p>
+          <ul>
+            <li style="color:green;">WAV Format</li>
+            <li style="color:green;">100 Distribution Copies</li>
+            <li style="color:green;">Up to 10,000 Audio Streams</li>
+            <li style="color:green;">1 Music Video</li>
+            <li style="color:green;">3 Paid Live Performances</li>
+            <li style="color:green;">3 Non-Profit Live Performances</li>
+            <li style="color:red;">No Radio Broadcasting</li>
+            <li style="color:green;">Credit Required (e.g., “Prod. KayCey”)</li>
+          </ul>
+    
+          <p><strong>Trackout License – $60</strong></p>
+          <ul>
+            <li style="color:green;">All Individual Stem Files</li>
+            <li style="color:green;">10,000 Distribution Copies</li>
+            <li style="color:green;">Up to 100,000 Audio Streams</li>
+            <li style="color:green;">3 Music Videos</li>
+            <li style="color:green;">25 Paid Live Performances</li>
+            <li style="color:green;">25 Non-Profit Live Performances</li>
+            <li style="color:green;">2 Radio Station Uses</li>
+            <li style="color:green;">Credit Required (e.g., “Prod. KayCey”)</li>
+            <li style="color:green;"><strong>Tag Use Required:</strong> Must include the official "C'mon KayCey" vocal tag at least once in the song.</li>
+          </ul>
+    
+          <p><strong>Unlimited License – $80</strong></p>
+          <ul>
+            <li style="color:green;">WAV, MP3, and All Individual Stem Files</li>
+            <li style="color:green;">Unlimited Distribution Copies</li>
+            <li style="color:green;">Unlimited Audio Streams</li>
+            <li style="color:green;">Unlimited Music Videos</li>
+            <li style="color:green;">Unlimited Paid/Non-Profit Live Performances</li>
+            <li style="color:green;">Unlimited Radio Station Uses</li>
+            <li style="color:green;">Credit Required (e.g., “Prod. KayCey”)</li>
+            <li style="color:green;"><strong>Tag Use Required:</strong> Must include the official "C'mon KayCey" vocal tag at least once in the song.</li>
+          </ul>
+        </div>
+    
+        <div class="section">
+          <h2>3. Ownership and Copyright</h2>
+          <p>All beats remain the sole property of KayCey. You are licensing the right to use, not own, the beat. No license may be resold, transferred, or sub-licensed.</p>
+          <p><strong>No beat may be resold, used in a remix, or shared/given to other artists unless explicitly agreed upon in writing or unless the beat has been properly licensed and paid for.</strong></p>
+        </div>
+    
+        <div class="section">
+          <h2>4. License Expiration and Renewal</h2>
+          <p>Each license remains valid until the usage limits outlined in Section 2 are reached. Licenses do not expire based on time. Continued use beyond those limits without obtaining a new license constitutes unauthorized use and is a violation of these Terms.</p>
+        </div>
+    
+        <div class="section">
+          <h2>5. Unauthorized Use & Breach</h2>
+          <ul>
+            <li style="color:red;">Downloading, copying, or using beats without paying for a license</li>
+            <li style="color:red;">Uploading, publishing, or distributing beats without an active license</li>
+            <li style="color:red;">Using a beat after your license usage limits have been exceeded</li>
+            <li style="color:red;">Removing or failing to give producer credit</li>
+            <li style="color:red;">Releasing under your own name or claiming authorship</li>
+          </ul>
+          <p>Violating any of these Terms may result in:</p>
+          <ul>
+            <li>Termination of your license</li>
+            <li>DMCA takedown notices</li>
+            <li>Legal action for damages or copyright infringement</li>
+          </ul>
+        </div>
+    
+        <div class="section">
+          <h2>6. Credit Requirement</h2>
+          <p>You must credit the producer anywhere the beat is published or distributed, including but not limited to: streaming platforms, YouTube, websites, and social media.<br>
+          Format: <strong>“C'mon KayCey”</strong><br>
+          Failure to provide proper credit is a breach of license.</p>
+        </div>
+    
+        <div class="section">
+          <h2>7. No Refund Policy</h2>
+          <p>Due to the digital nature of our products, all sales are final. Refunds are not available under any circumstances, including mistaken purchases, incompatibility, or buyer’s remorse.</p>
+        </div>
+    
+        <div class="section">
+          <h2>8. Limitation of Liability</h2>
+          <p>We are not liable for any damages or losses arising from your use or misuse of our beats, including content takedowns, copyright claims, or legal actions from third parties.</p>
+        </div>
+    
+        <div class="section">
+          <h2>9. Governing Law</h2>
+          <p>These Terms are governed by the laws of the State of California. Any disputes arising from or related to these Terms shall be resolved in the courts of Alameda County, California.</p>
+        </div>
+    
+        <div class="section">
+          <h2>10. Changes to Terms</h2>
+          <p>We reserve the right to update these Terms at any time. Continued use of the site and your licensed material constitutes your acceptance of any changes.</p>
+        </div>
+    
+        <div class="section">
+          <h2>11. Contact</h2>
+          <p>Have questions about licensing or need help? Contact us at:<br>
+          📧 <a href="mailto:prodbykaycey10@gmail.com">prodbykaycey10@gmail.com</a></p>
+        </div>
+    
+        <div class="section">
+          <h2>12. Vocal Tag Requirement (Trackout & Unlimited Licenses Only)</h2>
+          <p>For all purchases made under the <strong>Trackout</strong> and <strong>Unlimited</strong> license types, you are required to include the official "C'mon KayCey" vocal tag in your final recording <strong>at least once</strong>. This can be placed in the <em>intro, outro, or any section of the song</em>. The tag must be clearly audible and unaltered.<br>
+          Failure to include the vocal tag will be considered a breach of the licensing agreement and may result in license termination, takedown notices, or legal action.</p>
+        </div>
+    
+        <div class="section">
+          <h2>13. Revenue Share Agreement (WAV, Trackout & Unlimited Licenses Only)</h2>
+          <p>For any song released using a beat licensed under the <strong>WAV</strong>, <strong>Trackout</strong>, or <strong>Unlimited</strong> license types, the artist agrees to a <strong>50% net revenue share</strong> with the producer (ProdKayCey).</p>
+          <p>This revenue share applies to income generated through:</p>
+          <ul>
+            <li>Streaming services (e.g., Spotify, Apple Music)</li>
+            <li>Download sales (e.g., iTunes, Bandcamp)</li>
+            <li>Sync licensing (e.g., TV, film, advertising)</li>
+            <li>Performance royalties (via PROs like ASCAP, BMI, or SESAC)</li>
+          </ul>
+          <p>By purchasing and using the beat under these license types, you agree to:</p>
+          <ul>
+            <li>Register the producer as a 50% publisher and/or co-writer with any applicable Performing Rights Organization (PRO)</li>
+            <li>Share any sync licensing revenue 50/50</li>
+            <li>Provide reasonable documentation of revenue generation upon request</li>
+            <li>Remit the producer’s share within 30 days of receipt of payment</li>
+          </ul>
+          <p><strong>Failure to comply may result in license termination, takedown notices, and/or legal action.</strong></p>
+          <p><em>Note: This revenue share clause does not apply to the MP3 License.</em></p>
+        </div>
+      </p>
+    </article>
+    </section>
+
+
+       <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+  
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  
+      <input type="hidden" name="access_key" value="e830454a-7a71-4215-b17d-ae437ca52da6">
+  
+      <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+      <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+      <textarea name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </section>
+  
+  
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <p class="copyright">© 2025 ProdKayCey. All rights reserved.</p>
+        <p class="lease-stipulation-agreement"> By purchasing these beats, you the buyer, consent to the licensing and full lease contract stipulations.</p>
+      </div>
+    </footer>
+</body>
+</html>
