@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>prodkayceybeats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+    /* Base Styles */
+    body {
+      color: rgba(18, 18, 18);
+      background-color: white;
+      font-family: Poppins, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* Navigation */
+    .navbar {
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(18, 18, 18);
+      background-color: white;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .brand-logo {
+      margin: 0;
+      font-size: 24px;
+      color: rgba(18, 18, 18);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-link {
+      color: rgba(18, 18, 18);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #555555;
+    }
+
+
+    /* section */
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: rgba(18, 18, 18);
+      margin: 150px 0 0 0;
+      margin-bottom: 0px;
+      font-family: Poppins, sans-serif;
+    }
+
+    .license-stipulations{
+      font-size: 1.1rem;  
+      text-align:center; 
+      font-family: Poppins, sans-serif;
+      font-weight: 300;
+    }
+
+
+    /* Media */
+    @media (max-width: 991px) {
+      .beats-grid,
+      .license-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .lease-stipulation-agreement {
+        font-size: 0.9rem;
+      }
+    }
+
+  @media (max-width: 640px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 15px;
+      }
+
+    .nav-links {
+       gap: 15px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .beats-grid,
+      .license-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .lease-stipulation-agreement {
+        font-size: 0.7rem;
+      }
+
+    }
+    
+
+      /* Footer Inside Media */
+      .footer {
+        padding: 40px 20px;
+        text-align: center;
+        color: rgba(18, 18, 18);
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        margin-bottom: 20px;
+      }
+
+      .footer-link {
+        color: rgba(18, 18, 18);
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+      }
+
+      .copyright {
+        font-size: 0.9rem;
+      }
+
+      .lease-stipulation-agreement {
+        margin-bottom: -13px;
+      }
+      
+
+      .footer {
+        border-top: 1px solid rgba(18, 18, 18);
+      }
+
+
+      /* Contact Section */
+      .contact-section {
+        max-width: 1900px; 
+        margin: 100px auto;
+        padding: 0 20px;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .form-input,
+      .form-textarea {
+        padding: 15px;
+        border: 1px solid #212d35;
+        border-radius: 5px;
+        color: #e0e0e0;
+        background-color: rgba(255, 255, 255, 0.05);
+        font-size: 1rem;
+      }
+
+      .form-input::placeholder,
+      .form-textarea::placeholder {
+        color: #888;
+      }
+
+      .form-textarea {
+        height: 150px;
+        resize: vertical;
+      }
+
+      .btn-submit {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        color: #121212;
+        font-size: 1.1rem;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid rgba(18, 18, 18);
+        transition: opacity 0.3s ease;
+      }
+
+      .btn-submit:hover {
+        opacity: 0.9;
+      }
+</style>
+
+<body>
+
+        <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-link"><h1 class="brand-logo">PRODKAYCEY</h1></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#contact" class="nav-link">Contact</a> 
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="licensing" class="licensing-section">
+    <h2 class="section-title">MP3 License Agreement</h2>
+    <article class="license-card">
+      <p class="license-stipulations">
+        <strong>Licensee:</strong> [Customer Name]<br>
+        <strong>Licensor:</strong> KayCey ("Producer")<br>
+        <strong>Date of Purchase:</strong> [Insert Date]<br>
+        <strong>Beat Title:</strong> [Insert Beat Name]<br><br>
+  
+        <strong>License Grant:</strong><br>
+        - Format Provided: MP3 only<br>
+        - 0 Distribution Copies<br>
+        - Up to 5,000 Audio Streams<br>
+        - No Music Videos<br>
+        - No Paid or Non-Profit Performances<br>
+        - No Radio Broadcasting<br><br>
+  
+        <strong>Restrictions:</strong><br>
+        - No modifications/remixes<br>
+        - No sublicensing, resale, or transfer of license rights<br>
+        - This license does not grant ownership of the Beat<br><br>
+  
+        <strong>Credit Requirement:</strong> "Prod. KayCey"<br><br>
+  
+        <strong>Term & Termination:</strong><br>
+        - Active until usage limits are reached, at which point the Licensee must renew their license by purchasing a new one.<br>
+        - Breach may result in termination, takedowns, legal action<br><br>
+  
+        <strong>No Refund Policy:</strong> All sales are final<br><br>
+  
+        <strong>Governing Law:</strong> California
+      </p>
+    </article>
+  
+    <h2 class="section-title">WAV License Agreement</h2>
+    <article class="license-card">
+      <p class="license-stipulations">
+        <strong>Licensee:</strong> [Customer Name]<br>
+        <strong>Licensor:</strong> KayCey ("Producer")<br>
+        <strong>Date of Purchase:</strong> [Insert Date]<br>
+        <strong>Beat Title:</strong> [Insert Beat Name]<br><br>
+  
+        <strong>License Grant:</strong><br>
+        - Format Provided: WAV<br>
+        - 100 Distribution Copies<br>
+        - Up to 10,000 Audio Streams<br>
+        - 1 Music Video<br>
+        - 3 Paid and 3 Non-Profit Performances<br>
+        - No Radio Broadcasting<br><br>
+  
+        <strong>Restrictions:</strong><br>
+        - No modifications/remixes<br>
+        - No sublicensing, resale, or transfer of license rights<br>
+        - This license does not grant ownership of the Beat<br><br>
+  
+        <strong>Credit Requirement:</strong> "Prod. KayCey"<br><br>
+  
+        <strong>Revenue Share:</strong><br>
+        - 50% net revenue share on Streaming, Sales, Sync Licensing, and Performance Royalties<br>
+        - Register producer as 50% publisher/co-writer with any PRO<br>
+        - Remit revenue share within 30 days of payment<br><br>
+  
+        <strong>Term & Termination:</strong><br>
+        - Active until usage limits are reached, at which point the Licensee must renew their license by purchasing a new one.<br>
+        - Breach may result in termination, takedowns, legal action<br><br>
+  
+        <strong>No Refund Policy:</strong> All sales are final<br><br>
+  
+        <strong>Governing Law:</strong> California
+      </p>
+    </article>
+  
+    <h2 class="section-title">Trackout License Agreement</h2>
+    <article class="license-card">
+      <p class="license-stipulations">
+        <strong>Licensee:</strong> [Customer Name]<br>
+        <strong>Licensor:</strong> KayCey ("Producer")<br>
+        <strong>Date of Purchase:</strong> [Insert Date]<br>
+        <strong>Beat Title:</strong> [Insert Beat Name]<br><br>
+  
+        <strong>License Grant:</strong><br>
+        - Format Provided: All stem files<br>
+        - 10,000 Distribution Copies<br>
+        - Up to 100,000 Audio Streams<br>
+        - 3 Music Videos<br>
+        - 25 Paid and 25 Non-Profit Performances<br>
+        - 2 Radio Station Uses<br><br>
+  
+        <strong>Tag Requirement:</strong> The producer tag "C'mon KayCey" must be included at least once in the final version of the song.<br><br>
+  
+        <strong>Credit Requirement:</strong> "Prod. KayCey"<br><br>
+  
+        <strong>Revenue Share:</strong> Same as WAV License<br><br>
+  
+        <strong>Restrictions:</strong><br>
+        - No modifications/remixes<br>
+        - No sublicensing, resale, or transfer of license rights<br>
+        - This license does not grant ownership of the Beat<br><br>
+  
+        <strong>Term & Termination:</strong><br>
+        - Active until usage limits are reached, at which point the Licensee must renew their license by purchasing a new one.<br>
+        - Breach may result in termination, takedowns, legal action<br><br>
+  
+        <strong>No Refund Policy:</strong> All sales are final<br><br>
+  
+        <strong>Governing Law:</strong> California
+      </p>
+    </article>
+  
+    <h2 class="section-title">Unlimited License Agreement</h2>
+    <article class="license-card">
+      <p class="license-stipulations">
+        <strong>Licensee:</strong> [Customer Name]<br>
+        <strong>Licensor:</strong> KayCey ("Producer")<br>
+        <strong>Date of Purchase:</strong> [Insert Date]<br>
+        <strong>Beat Title:</strong> [Insert Beat Name]<br><br>
+  
+        <strong>License Grant:</strong><br>
+        - Formats Provided: WAV, MP3, all stem files<br>
+        - Unlimited Distribution, Streams, Videos, Performances, and Radio Uses<br><br>
+  
+        <strong>Tag Requirement:</strong> The producer tag "C'mon KayCey" must be included at least once in the final version of the song.<br><br>
+  
+        <strong>Credit Requirement:</strong> "Prod. KayCey"<br><br>
+  
+        <strong>Revenue Share:</strong> 50% net revenue share, same terms as Trackout/WAV<br><br>
+  
+        <strong>Restrictions:</strong><br>
+        - No modifications/remixes<br>
+        - No sublicensing, resale, or transfer of license rights<br>
+        - This license does not grant ownership of the Beat<br><br>
+  
+        <strong>Term & Termination:</strong><br>
+        - Active until usage limits are reached, at which point the Licensee must renew their license by purchasing a new one.<br>
+        - Breach may result in termination, takedowns, legal action<br><br>
+  
+        <strong>No Refund Policy:</strong> All sales are final<br><br>
+  
+        <strong>Governing Law:</strong> California
+      </p>
+    </article>
+  </section>
+  
+  
+
+
+       <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+  
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  
+      <input type="hidden" name="access_key" value="e830454a-7a71-4215-b17d-ae437ca52da6">
+  
+      <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+      <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+      <textarea name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </section>
+  
+  
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+          <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <p class="copyright">© 2025 ProdKayCey. All rights reserved.</p>
+        <p class="lease-stipulation-agreement"> By purchasing these beats, you the buyer, consent to the licensing and full lease contract stipulations.</p>
+      </div>
+    </footer>
+</body>
+</html>
